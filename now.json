@@ -3,7 +3,7 @@
   "name": "now-nextjs",
   "builds": [
     {
-      "src": "web/package.json",
+      "src": "next.config.js",
       "use": "@now/next"
     },
     {
