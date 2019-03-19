@@ -5,5 +5,8 @@
     { "src": "next.config.js", "use": "@now/next" },
     { "src": "api/hello/index.js", "use": "@now/node" }
   ],
-  "regions": ["hnd"]
+  "regions": ["hnd"],
+  "env": {
+    "REDIS_TOKEN": "@redis-token"
+  }
 }
