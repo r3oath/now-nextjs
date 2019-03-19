@@ -3,8 +3,12 @@
   "name": "now-nextjs",
   "builds": [
     {
-      "src": "package.json",
+      "src": "web/package.json",
       "use": "@now/next"
+    },
+    {
+      "src": "api/hello/index.js",
+      "use": "@now/node"
     }
   ],
   "regions": ["hnd"]
