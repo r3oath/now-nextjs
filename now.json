@@ -2,14 +2,8 @@
   "version": 2,
   "name": "now-nextjs",
   "builds": [
-    {
-      "src": "next.config.js",
-      "use": "@now/next"
-    },
-    {
-      "src": "api/hello/index.js",
-      "use": "@now/node"
-    }
+    { "src": "next.config.js", "use": "@now/next" },
+    { "src": "api/hello/index.js", "use": "@now/node" }
   ],
   "regions": ["hnd"]
 }
