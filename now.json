@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "now-nextjs",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/next"
+    }
+  ]
+}
