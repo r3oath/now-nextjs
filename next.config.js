@@ -1,6 +1,6 @@
 module.exports = {
   target: 'serverless',
-  publicRuntimeConfig: {
+  env: {
     redisToken: process.env.REDIS_TOKEN,
   }
 }
