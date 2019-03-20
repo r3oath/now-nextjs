@@ -1,15 +1,18 @@
+const path = require('path');
+
 module.exports = {
   target: 'serverless',
   env: {
     REDIS_TOKEN: process.env.REDIS_TOKEN,
   },
   webpack: (config, options) => {
-    config.resolve = {
-      alias: {
-        '@app': path.join(__dirname, './'),
-      }
-    }
+    const updatedConfig = config;
+    const { alias } = config.resolve;
 
-    return config;
+    updatedConfig.resolve.alias = Object.assign({}, alias, {
+      '@app': __dirname
+    });
+
+    return updatedConfig;
   }
 }
