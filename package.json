@@ -5,6 +5,7 @@
     "now-build": "next build"
   },
   "dependencies": {
+    "dotenv": "^7.0.0",
     "next": "^8.0.0",
     "ramda": "^0.26.1",
     "react": "^16.7.0",

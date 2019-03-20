@@ -1,5 +1,8 @@
 const webpack = require('webpack');
 const { reduce } = require('ramda');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const EXPOSED_ENVS = [
   'REDIS_TOKEN',
