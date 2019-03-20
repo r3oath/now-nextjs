@@ -6,7 +6,9 @@
     { "src": "api/hello/index.js", "use": "@now/node" }
   ],
   "regions": ["hnd"],
-  "env": {
-    "REDIS_TOKEN": "@redis-token"
+  "build": {
+    "env": {
+      "REDIS_TOKEN": "@redis-token"
+    }
   }
 }
