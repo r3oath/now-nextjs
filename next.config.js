@@ -9,5 +9,7 @@ module.exports = {
         '@app': path.join(__dirname, './'),
       }
     }
+
+    return config;
   }
 }
